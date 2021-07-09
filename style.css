@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+#right-wheel,
+#left-wheel {
+  animation: wheel 2s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes wheel {
+  form {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(350deg);
+  }
+}
